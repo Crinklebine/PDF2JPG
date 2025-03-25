@@ -20,8 +20,7 @@ Built using Python, PyMuPDF, Pillow, and PySide6.
 The latest **Windows build** is available [under Releases](https://github.com/Crinklebine/PDFtoJPG/releases).  
 Just download `PDFtoJPG.exe` and run — no install required.
 
-> 🪟 **Note:** The current version supports **Windows only**.  
-> 🐧🧑‍💻 Linux and macOS support will be added in future releases.
+> 🪟 **Note:** **Linux** and **macOS** are supported, simply run "python main-threaded.py"  
 
 ---
 
@@ -34,7 +33,7 @@ Just download `PDFtoJPG.exe` and run — no install required.
 
 ---
 
-## 📦 Dependencies (for devs)
+## 📦 Dependencies (for Linux and macOS users)
 
 If you're running from source:
 
