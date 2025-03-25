@@ -30,9 +30,9 @@ jobs:
 
     - name: Clean PyInstaller cache (optional but helpful)
       run: |
-        if exist build rmdir /s /q build
-        if exist dist rmdir /s /q dist
-        if exist PDFtoJPG.spec del PDFtoJPG.spec
+        if (Test-Path build) { Remove-Item build -Recurse -Force }
+        if (Test-Path dist) { Remove-Item dist -Recurse -Force }
+        if (Test-Path PDFtoJPG.spec) { Remove-Item PDFtoJPG.spec -Force }
 
     - name: Run build script
       run: |
@@ -52,4 +52,5 @@ jobs:
         files: dist/PDFtoJPG.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
 
