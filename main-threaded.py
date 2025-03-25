@@ -81,6 +81,7 @@ class PDFtoJPGConverter(QWidget):
         selected_scale = scale_factors[self.scale_selector.currentIndex()]
 
         self.progress_bar.setVisible(True)
+        self.progress_bar.setRange(0, 100)
         self.progress_bar.setValue(0)
 
         self.thread = PDFConverterThread(self.pdf_path, output_dir, selected_scale)
@@ -125,7 +126,8 @@ class PDFConverterThread(QThread):
                 image_path = os.path.join(self.output_dir, f"{base_name}_page_{i+1}.jpg")
                 img.save(image_path, "JPEG", quality=95)
 
-                self.progress_updated.emit(i + 1)
+                percent = int(((i + 1) / total_pages) * 100)
+                self.progress_updated.emit(percent)
 
             self.conversion_finished.emit(self.output_dir)
         except Exception as e:
