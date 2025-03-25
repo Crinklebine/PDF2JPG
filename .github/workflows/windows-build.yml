@@ -23,10 +23,16 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pyinstaller
-        pip install PyMuPDF
-        pip install Pillow
-        pip install PySide6
+        pip install pyinstaller==5.13.0
+        pip install PyMuPDF==1.23.21
+        pip install Pillow==10.2.0
+        pip install PySide6==6.6.1
+
+    - name: Clean PyInstaller cache (optional but helpful)
+      run: |
+        if exist build rmdir /s /q build
+        if exist dist rmdir /s /q dist
+        if exist PDFtoJPG.spec del PDFtoJPG.spec
 
     - name: Run build script
       run: |
@@ -39,9 +45,11 @@ jobs:
         path: dist/PDFtoJPG.exe
 
     - name: Upload EXE to GitHub Release
+      if: startsWith(github.ref, 'refs/tags/v')
       uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{ github.ref_name }}
         files: dist/PDFtoJPG.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
