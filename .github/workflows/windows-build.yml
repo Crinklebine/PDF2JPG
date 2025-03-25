@@ -23,6 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pyinstaller
         pip install PyMuPDF
+        pip install Pillow
 
     - name: Run build script
       run: |

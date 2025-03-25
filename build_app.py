@@ -35,7 +35,7 @@ def build_exe():
         "pyinstaller",
         "--onefile",  # Creates a single EXE file
         "--windowed",  # Prevents the console from opening
-        "--hidden-import=PyMuPDF", # Import PyMuPDF needed for fitz
+        "--hidden-import=fitz", # Import PyMuPDF needed for fitz
         f"--add-data={icon_path};icon",  # Ensures the icon file is bundled
         f"--icon={icon_path}",  # Sets the EXE’s icon
         f"--name={output_exe_name.replace('.exe', '')}",  # Custom EXE name
