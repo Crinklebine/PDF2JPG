@@ -1,4 +1,4 @@
-# PDF2JPG
+# PDFtoJPG
 
 Convert PDF files to high-quality JPG images with a simple and clean GUI.  
 Built using Python, PyMuPDF, Pillow, and PySide6.
