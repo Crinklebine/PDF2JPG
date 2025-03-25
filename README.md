@@ -13,6 +13,8 @@ Built using Python, PyMuPDF, Pillow, and PySide6.
 - Fast and lightweight
 - No internet required
 
+![Screenshot of the app interface](https://raw.githubusercontent.com/Crinklebine/PDFtoJPG/main/assets/Screenshot%202025-03-25%20193750.png)
+
 ---
 
 ## 💾 Download
