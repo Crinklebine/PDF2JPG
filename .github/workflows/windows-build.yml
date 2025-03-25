@@ -28,13 +28,20 @@ jobs:
         pip install Pillow
         pip install PySide6
 
-
     - name: Run build script
       run: |
         python build_app.py
 
-    - name: Upload EXE artifact
+    - name: Upload EXE as artifact (for debugging)
       uses: actions/upload-artifact@v4
       with:
         name: PDF2JPG-exe
         path: dist/PDFtoJPG.exe
+
+    - name: Upload EXE to GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ github.ref_name }}
+        files: dist/PDFtoJPG.exe
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
