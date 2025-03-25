@@ -1,5 +1,6 @@
 build/
 dist/
+tests/
 *.spec
 __pycache__/
 *.pyc
