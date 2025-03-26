@@ -7,11 +7,11 @@ Built using Python, PyMuPDF, Pillow, and PySide6.
 
 ## 🖥️ Features
 
-- Simple graphical interface
-- Converts PDFs to individual JPGs
-- Output folder selection
+- Simple graphical interface.
+- Converts PDFs to individual JPGs.
+- Output folder selection.
 - Your PDFs stay on your computer. Always.
-- Offline. No internet required
+- Offline. No internet required.
 
 ![Screenshot of the app interface](https://raw.githubusercontent.com/Crinklebine/PDFtoJPG/main/assets/Screenshot%202025-03-25%20193750.png)
 
