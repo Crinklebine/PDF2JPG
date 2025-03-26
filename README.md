@@ -13,7 +13,17 @@ Built using Python, PyMuPDF, Pillow, and PySide6.
 - Your PDFs stay on your computer. Always.
 - Offline. No internet required.
 
-![Screenshot of the app interface](https://raw.githubusercontent.com/Crinklebine/PDFtoJPG/main/assets/Screenshot%202025-03-25%20193750.png)
+<table>
+  <tr>
+    <td><img src="assets/Screenshot 2025-03-25 193750.png" width="300"/></td>
+    <td><img src="assets/Screenshot 2025-03-26 131428.png" width="300"/></td>
+  </tr>
+  <tr>
+    <td align="center">Windows</td>
+    <td align="center">Linux</td>
+  </tr>
+</table>
+
 
 ---
 
