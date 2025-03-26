@@ -41,3 +41,15 @@ If you're running from source:
 
 ```bash
 pip install PyMuPDF Pillow PySide6
+
+---
+
+## 📰 PDFtoJPG – A Digital Conversion Revolution
+
+<p align="center">
+  <img src="https://github.com/Crinklebine/PDFtoJPG/raw/main/assets/Gm8fZHzbYAA8U1X.jpeg" alt="PDFtoJPG Retro BYTE Ad" width="600">
+</p>
+
+<p align="center">
+  <i>Don’t just read your PDFs. See them. Frame them. Love them.</i>
+</p>
