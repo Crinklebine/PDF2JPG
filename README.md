@@ -36,12 +36,17 @@ Just download `PDFtoJPG.exe` and run — no install required.
 
 ---
 
-## 🚀 Usage
+## 🪟 Usage - Windows
 
 1. Open `PDFtoJPG.exe`
 2. Click "Open PDF" to select a file
 3. Choose an output folder
 4. The JPGs will be saved automatically
+
+## 🐧🍎 Usage - Linux & macOS
+```
+python3 main-threaded.py
+```
 
 ---
 
