@@ -41,8 +41,10 @@ If you're running from source:
 
 ```bash
 pip install PyMuPDF Pillow PySide6
+```
 
 ---
+
 
 ## 📰 PDFtoJPG – A Digital Conversion Revolution
 
